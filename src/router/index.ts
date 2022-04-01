@@ -2,7 +2,7 @@
  * @Author       : YH000354
  * @Date         : 2022-03-30 18:34:21
  * @LastEditors  : YH000354
- * @LastEditTime : 2022-04-01 12:06:28
+ * @LastEditTime : 2022-04-01 16:50:34
  * @FilePath     : \myblogzh\src\router\index.ts
  */
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
@@ -31,12 +31,12 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/:currentPath(.*)*', // 路由未匹配到，进入这个
     redirect: _ => {
-      return { path: '/404' }
+      return { path: '/' }
     },
   },
 ]
 const router = createRouter({
-  history: createWebHistory('/HopeNotDeadBlog/'),
+  history: createWebHistory('/Blog/'),
   routes,
   scrollBehavior(to, from, savedPosition) {
     return {
