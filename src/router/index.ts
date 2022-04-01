@@ -2,11 +2,10 @@
  * @Author       : YH000354
  * @Date         : 2022-03-30 18:34:21
  * @LastEditors  : YH000354
- * @LastEditTime : 2022-04-01 16:50:34
+ * @LastEditTime : 2022-04-01 18:26:29
  * @FilePath     : \myblogzh\src\router\index.ts
  */
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-import HelloWorld from '../components/HelloWorld.vue'
+import { createRouter, RouteRecordRaw, createWebHashHistory } from 'vue-router'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
@@ -16,17 +15,8 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/home',
-    name: 'HelloWorld',
-    component: HelloWorld,
-  },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "About" */ '../components/About.vue'),
+    name: 'home',
+    component: () => import('@/views/home/index.vue'),
   },
   {
     path: '/:currentPath(.*)*', // 路由未匹配到，进入这个
@@ -36,7 +26,7 @@ const routes: Array<RouteRecordRaw> = [
   },
 ]
 const router = createRouter({
-  history: createWebHistory('/Blog/'),
+  history: createWebHashHistory('/Blog/'),
   routes,
   scrollBehavior(to, from, savedPosition) {
     return {
