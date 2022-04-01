@@ -2,7 +2,7 @@
  * @Author       : YH000354
  * @Date         : 2022-03-30 18:34:21
  * @LastEditors  : YH000354
- * @LastEditTime : 2022-03-31 16:26:32
+ * @LastEditTime : 2022-04-01 12:06:28
  * @FilePath     : \myblogzh\src\router\index.ts
  */
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
@@ -36,7 +36,7 @@ const routes: Array<RouteRecordRaw> = [
   },
 ]
 const router = createRouter({
-  history: createWebHistory(''),
+  history: createWebHistory('/HopeNotDeadBlog/'),
   routes,
   scrollBehavior(to, from, savedPosition) {
     return {
