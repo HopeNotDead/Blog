@@ -10,7 +10,8 @@ export default defineConfig({
     alias: {
       '@': resolve(__dirname, 'src'),
       _c: resolve(__dirname, 'src/components'),
-      '/image': './src/assets/image',
+      // '/image': './src/assets/image',
+      '/assets': './src/assets',
     },
   },
   server: {
