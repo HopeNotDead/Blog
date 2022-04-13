@@ -2,7 +2,7 @@
  * @Author       : YH000354
  * @Date         : 2022-04-01 18:18:07
  * @LastEditors  : YH000354
- * @LastEditTime : 2022-04-12 18:41:41
+ * @LastEditTime : 2022-04-13 09:43:48
  * @FilePath     : \hopenotdeadBlog\src\views\home\index.vue
 -->
 <template>
@@ -54,7 +54,7 @@ export default {
   height: 100%;
   width: 100%;
   .titlebac {
-    background: url('assets/image/titlebac.jpg') 50% 50% no-repeat;
+    background: url('../../assets/image/titlebac.jpg') 50% 50% no-repeat;
     background-size: cover;
     height: 200vh;
     font: 900 15rem '';
