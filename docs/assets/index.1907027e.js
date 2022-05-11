@@ -1,0 +1,1 @@
+import{_ as e}from"./index.c549afce.js";import{f as o,o as t,i as n,g as s}from"./vendor.c7fee913.js";const a={name:"knowledge"},c=n(" knowledge "),r=s("i",{class:"iconfont icon-arrow-down-bold",style:{"font-size":"40px"}},null,-1),d=[c,r];function i(_,l,f,p,m,u){return t(),o("div",null,d)}var k=e(a,[["render",i]]);export{k as default};
